@@ -1,0 +1,106 @@
+:root{
+  --green-700:#0b6b2f;
+  --green-500:#0f8a3a;
+  --green-100:#e6f4ea;
+  --white:#ffffff;
+  --muted:#6b6b6b;
+  --card-shadow: 0 6px 18px rgba(11,107,47,0.06);
+  --radius:10px;
+  font-family: Inter, system-ui, Arial, sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#f7fff7;color:var(--green-700);-webkit-font-smoothing:antialiased}
+.app-header{background:var(--white);border-bottom:1px solid var(--green-100);box-shadow:var(--card-shadow)}
+.header-inner{max-width:1100px;margin:0 auto;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:44px;height:44px;border-radius:8px;background:var(--green-100);display:flex;align-items:center;justify-content:center;color:var(--green-700);font-weight:700}
+.brand-title{font-size:1.05rem;font-weight:700}
+.nav{display:flex;gap:8px;align-items:center}
+.nav a{padding:8px 12px;border-radius:8px;color:var(--green-700);text-decoration:none;font-weight:600}
+.nav a.active, .nav a:hover{background:var(--green-100)}
+.header-actions{display:flex;gap:8px;align-items:center}
+.btn{padding:8px 12px;border-radius:8px;border:none;cursor:pointer}
+.btn-primary{background:var(--green-700);color:var(--white)}
+.btn-ghost{background:transparent;border:1px solid var(--green-100);color:var(--green-700)}
+
+/* Botón para pegar desde Excel: estilo pill verde con texto blanco */
+.btn-excel{background:var(--green-700);color:var(--white);padding:8px 14px;border-radius:14px;font-weight:600;border:none;box-shadow:none}
+
+/* Botón editar: sombra/relleno verde */
+.btn-edit{background:var(--green-700) !important;color:var(--white) !important;padding:6px 10px;border-radius:6px;border:none;font-weight:700;box-shadow:none;opacity:1}
+.btn-edit.small{padding:4px 8px;font-weight:700}
+
+/* Tablas: bordes estilo LC (verde) para todas las tablas usadas en páginas navegables */
+table, .lc-table, .creos-table, .listado-table, .preview-table, .bdpm-table, .payments-table, .informe-table, .crisalida-table, .casino-table, .otros-table { border-collapse: collapse; }
+table th, table td,
+.lc-table th, .lc-table td,
+.creos-table th, .creos-table td,
+.listado-table th, .listado-table td,
+.preview-table th, .preview-table td,
+.bdpm-table th, .bdpm-table td,
+.payments-table th, .payments-table td,
+.informe-table th, .informe-table td,
+.crisalida-table th, .crisalida-table td,
+.casino-table th, .casino-table td,
+.otros-table th, .otros-table td {
+  border: 1px solid var(--green-700);
+}
+
+/* Línea intermedia entre filas: añadir borde superior a cada fila (excepto la primera) */
+table tbody tr td,
+.lc-table tbody tr td,
+.creos-table tbody tr td,
+.listado-table tbody tr td,
+.preview-table tbody tr td,
+.bdpm-table tbody tr td,
+.payments-table tbody tr td,
+.informe-table tbody tr td,
+.crisalida-table tbody tr td,
+.casino-table tbody tr td,
+.otros-table tbody tr td {
+  border-top: 1px solid var(--green-700);
+}
+.table-bordered-row-first-none table tbody tr:first-child td,
+.lc-table tbody tr:first-child td,
+.creos-table tbody tr:first-child td,
+.listado-table tbody tr:first-child td,
+.preview-table tbody tr:first-child td,
+.bdpm-table tbody tr:first-child td,
+.payments-table tbody tr:first-child td,
+.informe-table tbody tr:first-child td,
+.crisalida-table tbody tr:first-child td,
+.casino-table tbody tr:first-child td,
+.otros-table tbody tr:first-child td {
+  border-top: none;
+}
+
+.container{max-width:1100px;margin:20px auto;padding:0 18px}
+.top-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+.title{font-size:1.4rem;font-weight:700}
+.search{display:flex;gap:8px;align-items:center}
+.input{padding:10px 12px;border-radius:8px;border:1px solid var(--green-100);background:var(--white);min-width:220px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.card{background:var(--white);border-radius:var(--radius);box-shadow:var(--card-shadow);padding:14px;border:1px solid #f0f7f0}
+.card h3{margin:0 0 6px 0;color:var(--green-700)}
+.card p{margin:0;color:var(--muted);font-size:0.95rem}
+
+.form-row{display:flex;flex-direction:column;margin-bottom:10px}
+.form-row label{font-weight:600;color:var(--green-700);margin-bottom:6px}
+.form-row input, .form-row select, .form-row textarea{padding:10px;border-radius:8px;border:1px solid var(--green-100);background:var(--white)}
+.form-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:8px}
+
+.footer{background:var(--white);border-top:1px solid var(--green-100);padding:12px 0;margin-top:28px;text-align:center;color:var(--muted)}
+.small{font-size:0.9rem;color:var(--muted)}
+
+/* variables si no existen */
+:root{
+  --green-700:#0b6b2f;
+  --green-100:#e6f4ea;
+  --white:#ffffff;
+  --card-shadow: 0 6px 18px rgba(11,107,47,0.06);
+  --muted:#6b6b6b;
+}
+
+/* mobile friendly iframe */
+iframe { display:block; width:100%; border:0; }

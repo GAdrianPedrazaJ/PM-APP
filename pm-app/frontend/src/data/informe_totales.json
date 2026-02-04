@@ -1,0 +1,28 @@
+{
+  "rows": [
+    {
+      "proyecto": "PM2322-Cuarto Frio",
+      "presupuesto": 73098814,
+      "ejecucion": 80004141,
+      "saldo": -6905327,
+      "pct_ejecucion": 109.45,
+      "estado": "CERRADO"
+    },
+    {
+      "proyecto": "PM2323-Instalación A",
+      "presupuesto": 25000000,
+      "ejecucion": 12500000,
+      "saldo": 12500000,
+      "pct_ejecucion": 50.00,
+      "estado": "ACTIVO"
+    },
+    {
+      "proyecto": "PM2324-Mantenimiento B",
+      "presupuesto": 10000000,
+      "ejecucion": 8000000,
+      "saldo": 2000000,
+      "pct_ejecucion": 80.00,
+      "estado": "PENDIENTE"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "rows": [
+    {
+      "proyecto": "PM2322-Cuarto Frio",
+      "proveedor": "Proveedor A",
+      "tipo_documento": "Contrato",
+      "numero_documento": "C-001",
+      "fecha_documento": "2025-09-12",
+      "subtotal": 60000000,
+      "iva_pct": 19,
+      "total": 71400000,
+      "estado": "CERRADO",
+      "pagos": [
+        { "id": "p1", "fecha": "2025-09-20", "monto": 20000000 },
+        { "id": "p2", "fecha": "2025-10-15", "monto": 30000000 },
+        { "id": "p3", "fecha": "2025-11-10", "monto": 21400000 }
+      ]
+    },
+    {
+      "proyecto": "PM2323-Instalación A",
+      "proveedor": "Proveedor B",
+      "tipo_documento": "Orden",
+      "numero_documento": "O-045",
+      "fecha_documento": "2025-11-02",
+      "subtotal": 21008403,
+      "iva_pct": 19,
+      "total": 25000000,
+      "estado": "ACTIVO",
+      "pagos": [
+        { "id": "p4", "fecha": "2025-11-10", "monto": 5000000 },
+        { "id": "p5", "fecha": "2025-12-05", "monto": 7500000 }
+      ]
+    },
+    {
+      "proyecto": "PM2324-Mantenimiento B",
+      "proveedor": "Proveedor C",
+      "tipo_documento": "Factura",
+      "numero_documento": "F-120",
+      "fecha_documento": "2025-12-01",
+      "subtotal": 6722689,
+      "iva_pct": 19,
+      "total": 8000000,
+      "estado": "PENDIENTE",
+      "pagos": [
+        { "id": "p6", "fecha": "2025-12-20", "monto": 3000000 }
+      ]
+    }
+  ]
+}
+
